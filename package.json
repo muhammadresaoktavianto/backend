@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "prepare-model": "node scripts/download_model.js",
+    "start": "npm run prepare-model && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "fs-extra": "^11.3.2",
+    "mysql": "^2.18.1",
+    "node-fetch": "2.7.0",
+    "nodemon": "^3.1.11",
+    "papaparse": "^5.5.3",
+    "pg": "^8.16.3"
+  }
+}
